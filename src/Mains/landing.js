@@ -9,9 +9,9 @@ import './landing.scss'
 import Tooltip from '@material-ui/core/Tooltip';
 import Success from '../Components/Success'
 const Landing = () => {
-    const [currentStep, setCurrentStep] = useState(1)
+    const [currentStep, setCurrentStep] = useState(3)
     const [nextDisabled, setNextDisabled] = useState(true)
-    const [isChosen, setIsChosen] = useState("")
+    const [isChosen, setIsChosen] = useState("3")
     const [success, setSuccess] = useState(false)
    const  _next = () => {
         let CurrentStep =currentStep
