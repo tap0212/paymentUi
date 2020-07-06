@@ -1,0 +1,193 @@
+@import '../Assets/theme.scss';
+.landing{
+    height: 100vh;
+    .card{
+        margin-top: 20vh;
+        margin-left: 20vw;
+        height: 60vh;
+        width: 60vw;
+        border-radius: 16px;
+        background: #EDF2F7;
+        box-shadow:  29px 29px 58px #e1e6eb, 
+                    -29px -29px 58px #f9feff;
+        
+        .left{
+            
+            margin: 0;
+            padding: 0;
+            height: 60vh;
+            width: 100%;
+            h3:first-child{
+                color: $accent1;
+                font-weight: 600;
+                margin: 0;
+                padding-top: 5%;
+                padding-left: 4%;
+            }
+            h2{
+                font-weight: 400;
+                padding-left: 4%;
+            }
+            .product{
+                color: $accent2;
+                margin-top: 10vh;
+                padding-left: 6%;
+                font-size: 3em;
+                font-weight: 300;
+                
+                span{
+                    margin-left: 2%;
+                    font-size: 1.5em;
+                    font-weight: 400;
+                }
+                margin-bottom: 1%;
+            }
+
+            p{
+                font-weight: 300;
+                padding-top: 0;
+                margin-top: 0;
+                padding-left: 6%;
+            }
+
+            .billing{
+                margin-top: 20%;
+                color:$accent2 ;
+                padding-left: 6%;
+                font-size: 2em;
+                font-weight: 300;
+                
+                span{
+                    margin-left: 2%;
+                    font-size: 1.3em;
+                    font-weight: 400;
+                }
+            }
+        }
+        .right{
+            cursor: pointer;
+            background-color: $bgc2;
+            border-radius: 6px;
+            height: 100%;
+            margin-top: 0;
+            padding-top: 0;
+            transform: scale(1.1);
+
+            h3{
+                color :rgba(255,255,255, 0.6);
+                font-size: 1.5em;
+                font-weight: 900;
+                padding: 3%;
+                margin: 0;
+            }
+            .form{
+                height: 75%;
+                border: 1px solid rgba(255,255,255, 0.1);
+            }
+            .btn-primary{
+                float: right;
+                margin-right: 10%;
+                font-size: 50px;
+                border: 2px solid $accent2;
+            }
+            .btn-primary-disabled{
+                float: right;
+                margin-right: 10%;
+                font-size: 50px;
+                opacity: 0.2;
+                border: 2px solid $accent2;
+                cursor: not-allowed;
+                pointer-events: all !important;
+            }
+            .btn-primary:hover{
+                cursor: pointer;
+                background-color: $accent2;
+                color: #fff;
+            }
+
+            .btn-secondary{
+                margin-left: 10%;
+                font-size: 50px;
+                border: 2px solid $accent2;
+            }
+            .btn-secondary:hover{
+                cursor: pointer;
+                background-color: $accent2;
+                color: #fff;
+            }
+        } 
+    }
+}
+
+@media only screen and (max-width:500px){
+    .landing{
+        .card{
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 1vh;
+            margin-left: 2.5vw;
+            width: 95vw;
+            border-radius: 16px;
+            background: #EDF2F7;
+            box-shadow:  29px 29px 58px #e1e6eb, 
+                        -29px -29px 58px #f9feff;
+            
+            .left{
+                display: none;
+               
+            }
+            .right{
+                height: 100vh;
+                cursor: pointer;
+                background-color: $bgc2;
+                border-radius: 6px;
+                margin-top: 0;
+                padding-top: 0;
+                transform: scale(1.05);
+    
+                h3{
+                    color :rgba(255,255,255, 0.6);
+                    font-size: 1.5em;
+                    font-weight: 900;
+                    padding: 10%;
+                    margin: 0;
+                }
+                .form{
+                    
+                    border: 1px solid rgba(255,255,255, 0.1);
+                }
+                .btn-primary{
+                    float: right;
+                    margin-right: 10%;
+                    font-size: 50px;
+                    border: 2px solid $accent2;
+                }
+                .btn-primary-disabled{
+                    float: right;
+                    margin-right: 10%;
+                    font-size: 50px;
+                    opacity: 0.2;
+                    border: 2px solid $accent2;
+                    cursor: not-allowed;
+                    pointer-events: all !important;
+                }
+                .btn-primary:hover{
+                    cursor: pointer;
+                    background-color: $accent2;
+                    color: #fff;
+                }
+    
+                .btn-secondary{
+                    margin-left: 10%;
+                    font-size: 50px;
+                    border: 2px solid $accent2;
+                }
+                .btn-secondary:hover{
+                    cursor: pointer;
+                    background-color: $accent2;
+                    color: #fff;
+                }
+            } 
+        }
+    }
+}
